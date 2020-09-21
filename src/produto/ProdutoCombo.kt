@@ -2,7 +2,7 @@ package produto
 
 class ProdutoCombo(var produtoNome: String, var valorTotal: Double) : Produto {
 
-    var combo: MutableList<Produto> = mutableListOf<Produto>()
+    var combo: List<Produto> = mutableListOf<Produto>()
 
     override fun getNome(): String = produtoNome
 
