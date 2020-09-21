@@ -18,7 +18,7 @@ fun main() {
 
     combo2.combo = listOf(hamburguerFrango, refrigeranteMédio, batataMedia)
 
-    val carrinho1 = Carrinho(combo1, batataGrande)
+    val carrinho1 = Carrinho(mutableListOf(combo1, batataGrande))
 
     carrinho1.valorTotal()
 }
