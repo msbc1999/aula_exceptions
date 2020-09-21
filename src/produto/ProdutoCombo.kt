@@ -1,15 +1,17 @@
 package produto
 
-class ProdutoCombo(var produtoNome: String) : Produto {
+class ProdutoCombo(var produtoNome: String, var valorTotal: Double) : Produto {
 
     var combo: MutableList<Produto> = mutableListOf<Produto>()
 
     override fun getNome(): String = produtoNome
 
-    override fun getValor(): Double {
+    fun getSomaProdutosNoCombo(): Double {
         var total = 0.0
         combo.forEach { total += it.getValor() }
         return total
     }
+
+    override fun getValor(): Double = valorTotal
 
 }
