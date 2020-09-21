@@ -1,3 +1,7 @@
+package carrinho
+
+import produto.Produto
+
 class Carrinho(var produtos: MutableList<Produto>) {
 
     fun valorTotal(){
