@@ -1,3 +1,4 @@
+import carrinho.Carrinho
 import produto.ProdutoCombo
 import produto.ProdutoSimples
 
