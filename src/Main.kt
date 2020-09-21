@@ -1,3 +1,6 @@
+import produto.ProdutoCombo
+import produto.ProdutoSimples
+
 fun main() {
     val hamburguerCarne = ProdutoSimples("hamburguer de carne bovina", 10.00)
     val hamburguerFrango = ProdutoSimples("hamburguer de frango", 12.00)
