@@ -11,14 +11,15 @@ fun main() {
     val batataGrande = ProdutoSimples("batata frita grande", 7.00)
 
     val combo1 = ProdutoCombo("combo 1", 22.00)
-
     combo1.combo = listOf(hamburguerCarne, refrigeranteMédio, batataMedia)
 
     val combo2 = ProdutoCombo("combo 2", 24.00)
-
     combo2.combo = listOf(hamburguerFrango, refrigeranteMédio, batataMedia)
 
-    val carrinho1 = Carrinho(mutableListOf(combo1, batataGrande))
+    val comboFamilia1 = ProdutoCombo("combo familia 1", 75.00)
+    comboFamilia1.combo = listOf(combo1, combo1, combo2, combo2)
+
+    val carrinho1 = Carrinho(mutableListOf(combo1, batataGrande, comboFamilia1, refrigeranteGrande))
 
     carrinho1.valorTotal()
 }
